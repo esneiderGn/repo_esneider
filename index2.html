@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Productos para el Pelo</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <style>
+        .productos-container {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+            max-width: 900px;
+            margin: auto;
+        }
+        .productos-lista {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+        }
+        .producto {
+            background: #f7f7f7;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(33, 147, 176, 0.08);
+            padding: 1rem;
+            width: 220px;
+            text-align: center;
+            transition: box-shadow 0.2s;
+        }
+        .producto:hover {
+            box-shadow: 0 4px 16px rgba(33, 147, 176, 0.18);
+        }
+        .producto img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+        .producto button {
+            margin-top: 1rem;
+            background: #2193b0;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 0.5rem 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .producto button:hover {
+            background: #176087;
+        }
+    </style>
+</head>
+<body>
+    <div class="productos-container">
+        <h2>Compra Productos para el Pelo</h2>
+        <div class="productos-lista">
+            <div class="producto">
+                <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=100&q=80" alt="Shampoo">
+                <h3>Shampoo Nutritivo</h3>
+                <p>Ideal para cabello seco y maltratado.</p>
+                <span><strong>$25.000</strong></span>
+                <button>Comprar</button>
+            </div>
+            <div class="producto">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=100&q=80" alt="Acondicionador">
+                <h3>Acondicionador Suave</h3>
+                <p>Desenreda y suaviza el cabello.</p>
+                <span><strong>$22.000</strong></span>
+                <button>Comprar</button>
+            </div>
+            <div class="producto">
+                <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=100&q=80" alt="Aceite">
+                <h3>Aceite Reparador</h3>
+                <p>Repara puntas abiertas y da brillo.</p>
+                <span><strong>$30.000</strong></span>
+                <button>Comprar</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
